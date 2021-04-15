@@ -1,0 +1,448 @@
+body{
+    padding: 0%;
+    margin:0 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.welcome{
+    /* position: relative; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin-top: 0px;
+}
+h1{
+    font-size: 2.3rem;
+    margin-left: 15px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.logado{
+    width: 32px;
+    padding: 0px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+.navbar label {
+    text-align: right;
+}
+.menu {
+    display: none;
+    animation: deslizamiento 1.0s;
+}
+#menuboton:checked ~ .menu {
+    display: block;
+    width: 100%;
+}
+#menuboton {
+    display: none;
+}
+ul{
+    height: 50px;
+    margin: 0px;
+    margin-right: -95px;
+}
+ul li{
+    display: inline-flex;
+    background-color: rgb(71 110 180);
+    width: 100%;
+    height: 42px;
+    border: 0px solid rgb(255 255 255);
+    border-radius: 30px;
+    margin-bottom: 4px;  
+}
+.menuBtn{
+    padding: 8px 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.0rem;
+    color: white;
+    outline: none;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+.menuBtn:hover, .menuBTN:active{
+    color: #7f97c5;
+    font-weight: bold;
+}
+@keyframes deslizamiento {
+    0%{
+        transform: translateY(-50%);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+.portada {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #476EB4;
+    margin-top: 90px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5rem;
+}
+.saludo{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #476EB4;
+    margin-top: 90px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    line-height: 1.7rem;
+    text-align: center;
+}
+.searcher{
+    background-color: rgb(240 240 240);
+    border-radius: 30px;
+    padding: 6px 10px;
+    width: 75%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: -55px 0 0 0;
+}
+.input{
+    font-size: 1.0rem;
+    padding: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    border: 0px;
+    background-color: transparent;
+    width: 90%;
+    padding-right: 10%;
+}
+.input:focus {
+    outline: none;
+}
+.enterBTN, .enterBTN:active{
+    border: none;
+    background-color: transparent;
+}
+.enterBTN:hover{
+    transform: scale(1.2);
+}
+.enterBTN:focus {
+    outline: none;
+}
+.lupa{
+    width: 22px;
+    padding: 0px;
+    border: none;
+}
+.image{
+    width: 92%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.thiefSpiner{
+    /* margin-top: 391px; */
+    position: fixed;
+    width: 100vw;
+    position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin: 181px 0px 0 0;
+}
+#thief{
+    width: 50px;
+    height: 50px;
+    margin-top: 460px;
+    animation: thief;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    animation-play-state:  running;
+}
+@keyframes thief {
+    0% {transform: translateX(140%)rotateY(0deg)}
+    49% {transform: translateX(-140%)rotateY(0deg)}
+    50% {transform: translateX(-1400%)rotateY(180deg)}
+    99% {transform: translateX(140%)rotateY(180deg)}
+    100% {transform: translateX(140%)rotateY(0deg)} /*si bien va con display fixed y no debería dar guerra*/
+}
+.ofert{
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 10px 8px;
+}
+.titulo{
+    margin-top: 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #476EB4;
+    line-height: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.decripcion{
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+}
+.footer-ofert{
+    display: flex;
+    align-items: center;
+}
+.remuneracion{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.estrella{
+    width: 25px;
+    padding: 0px;
+    border: none;
+}
+.mainLog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    background-color: #476EB4;
+    width: 95%;
+    margin-top: 50px;
+    border-radius: 3px;
+    align-items: center;
+    padding-bottom: 50px;
+    min-width: 300px;
+    max-width: 500px;
+}
+.textLog{
+    color: white;
+    margin-top: 55px;
+}
+.write{
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    padding: 6px 10px;
+    margin: 15px 2%;
+}
+div.btn{
+    display: flex;
+    justify-content: center;
+}
+.basicBtn{
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 15px 2%;
+    border: none;
+    font-size: 1.0rem;
+    color: #476EB4;
+    font-weight: 600;
+    outline: none;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+.basicBtn:hover, .notBtn:hover{
+    transform: scale(0.95);
+}
+div.notBtn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+.notBtn{
+    color: white;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    font-size: 1.0rem;
+}
+#back{
+    outline: none;
+}
+
+/* ----------------------------------------------------------QUERIES */
+
+@media screen and (min-width: 768px){
+    div.welcome{
+        max-width: 1200px;
+    }
+    header{
+        max-width: 1300px;
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+    .logado{
+        width: 36px;
+    }
+    .portada{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .image{
+        margin: 2% 3% 0px -39px;
+        width: 50vw;
+    }
+    .container{
+        margin-top: -10px;
+        max-width: 900px;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin: 0% 0% 0% 3%;
+        line-height: 1.9rem;
+        z-index: 10;
+    }
+    .searcher{
+        margin: -24% 0% 7% -44%;
+        width: 43%;
+    }
+    #thief{
+        width: 90px;
+        height: 90px;
+    }
+    .thiefSpiner{
+        margin: -33px 0px 0 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .image{
+        width: 48vw;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    h2{
+        font-size: 1.7rem;
+        margin: -9% 2% 0% 5%;
+        line-height: 2.0rem;
+        z-index: 10;
+    }
+    .searcher{
+        margin: -28% 0% 5% -44%;
+        width: 38%
+    }
+    .container{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h2{
+        font-size: 1.9rem;
+        margin: -9% 7% 0% 4%;
+        line-height: 2.2rem;
+    }
+    .searcher{
+        margin: -28% 0% 6% -51%;
+        width: 36%;
+    }
+    .thiefSpiner{
+        margin: 115px 0px 0 0;
+    }
+}
+
+
+@media screen and (min-width: 1250px) {
+    .image{
+        width: 47vw;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .image{
+        width: 44vw;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .image{
+        width: 43vw;
+    }
+}
+
+
+
+
+/* ----------------------------BREAKPOINTS CON TAMAÑOS ABSOLUTOS */
+
+/*768---> width: 382px; */
+/* 800--->width: 395px; */
+/* @media screen and (min-width: 850px) {
+    .image{
+        width: 415px;
+    }
+} */
+/* 
+@media screen and (min-width: 900px) { */
+    /* .image{
+        width: 430px;
+    }
+}
+/* @media screen and (min-width: 930px) {
+    .image{
+        width: 445px;
+    }
+} */
+/* 
+@media screen and (min-width: 960px) {
+    .image{
+        width: 465px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .image{
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .image{
+        width: 500px;
+    }
+} */
+/* 1000px---> .image{
+    width: 525px;
+} */
+/* @media screen and (min-width: 1150px) {
+    .image{
+        width: 552px;
+    }
+} */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WebWork]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>[WebWork]</h1>
+        <nav class="navbar">
+            <label for="menuboton">
+                <img class="logado" src="img/logado.svg" alt="botón +">
+            </label>
+            <input type="checkbox" name="checkbox" id="menuboton">
+
+            <div class="menu">
+                <ul>
+                    <li>
+                       <button type="button" class="menuBtn" id="signUpBtn">Registrarse</button>
+                    </li>
+                    <li>
+                        <button type="button" class="menuBtn" id="loginBtn">Entrar</button>
+                    </li>
+                    <li>
+                        <button type="button" class="menuBtn" id="favsBtn">Favoritos</button>
+                    </li>
+                    <li>
+                        <button type="button" class="menuBtn" id="logoutBtn">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="welcome">
+        <div class="portada">
+            <h2>La plataforma de los desarrolladores web freelancer. Elige tu trabajo, gestiona tu tiempo.</h2>
+            <img src="img/portada.jpg" class="image" alt="">
+        </div>
+        <div class="searcher">
+            <input type="text" class="input" required name="search" id="input" placeholder="Buscar"/>
+            <button type="button" class="enterBTN" id="searchBtn"> <img src="img/lupa.svg" class="lupa" alt=""></button>
+        </div>
+    </div>
+
+    <div class="container" id="father">
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
