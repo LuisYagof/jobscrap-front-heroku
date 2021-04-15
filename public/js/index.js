@@ -108,8 +108,10 @@ function search(){
         fetch(`https://glacial-woodland-30782.herokuapp.com/search/${INPUT.value}`, {
             headers: {
                 'authorization': `Bearer: ${sessionStorage.getItem('token')}`,
-                'Content-Type': 'application/json'
-            }
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            mode: 'cors'
         })
         .then(res => res.json())
         .then(data => {
@@ -128,8 +130,10 @@ function search(){
     } else {
         fetch(`https://glacial-woodland-30782.herokuapp.com/search/${INPUT.value}`, {
             headers: {
-                'Content-Type': 'application/json'
-            }
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            mode: 'cors'
         })
         .then(res => res.json())
         .then(data => {
