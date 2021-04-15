@@ -5,7 +5,7 @@ const express = require('express');
 // -------------------------------SERVIDOR Y PUERTOS
 
 const server =  express()
-const listenPort = process.env.STATIC || 443;
+const listenPort = process.env.PORT || 443;
 
 const staticFilesPath = express.static(__dirname + '/public');
 server.use(staticFilesPath);
