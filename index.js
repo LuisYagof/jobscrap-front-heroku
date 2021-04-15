@@ -1,7 +1,6 @@
 // -------------------------PAQUETES E IMPORTACIONES
 
 const express = require('express');
-const dotenv = require('dotenv').config()
 
 // -------------------------------SERVIDOR Y PUERTOS
 
