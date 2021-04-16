@@ -19,7 +19,7 @@ document.querySelector("#signUpBtn")
     .addEventListener("click", () => signUp() )
     
 function signUp() {
-    fetch("https://glacial-woodland-30782.herokuapp.com/signup", {
+    fetch("https://jobscrap-api.herokuapp.com/signup", {
         method: 'POST',
         body: JSON.stringify( {nombre: INPUTname.value, email: INPUTmail.value, pass: INPUTpass.value} ),
         headers: {

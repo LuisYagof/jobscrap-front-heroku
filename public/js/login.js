@@ -30,7 +30,7 @@ document.querySelector("#loginBtn")
     .addEventListener("click", () => login() )
     
 function login() {
-    fetch("https://glacial-woodland-30782.herokuapp.com/login", {
+    fetch("https://jobscrap-api.herokuapp.com/login", {
         method: 'POST',
         body: JSON.stringify( {email: INPUTmail.value, pass: INPUTpass.value} ),
         headers: {

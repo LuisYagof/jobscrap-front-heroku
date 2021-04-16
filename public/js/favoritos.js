@@ -12,7 +12,7 @@ function goSearch() {
 // ---------------------------------SHOW FAVS
 
 function showFavs () {
-    fetch("https://glacial-woodland-30782.herokuapp.com/showFavs", {
+    fetch("https://jobscrap-api.herokuapp.com/showFavs", {
         headers: {
             'authorization': `Bearer: ${sessionStorage.getItem('token')}`,
             'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ function printData(element) {
 // ---------------------------------DELETE FAVS
 
 function deleteFav(favId) {
-    fetch("https://glacial-woodland-30782.herokuapp.com/deleteFav", {
+    fetch("https://jobscrap-api.herokuapp.com/deleteFav", {
         method: 'DELETE',
         body: JSON.stringify( { elem: favId } ),
         headers: {
@@ -117,7 +117,7 @@ document.querySelector("#logoutBtn")
     .addEventListener("click", () => logout() )
     
 function logout() {
-    fetch("https://glacial-woodland-30782.herokuapp.com/logout", {
+    fetch("https://jobscrap-api.herokuapp.com/logout", {
         method: 'PUT',
         headers: {
             'authorization': `Bearer: ${sessionStorage.getItem('token')}`

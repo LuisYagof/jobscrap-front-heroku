@@ -4,7 +4,7 @@ const Url = new URLSearchParams(window.location.search)
 const token = Url.get('tok')
 
 function reestablecer(){
-    fetch(`https://glacial-woodland-30782.herokuapp.com/reestablecer/${token}`, {
+    fetch(`https://jobscrap-api.herokuapp.com/reestablecer/${token}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function printDynamics (mail, id, nombre = usuario, secret){
 // ---------------------------------------------NEW PASS 
     
 function resetPass(pass, mail, id, secret) {
-fetch("https://glacial-woodland-30782.herokuapp.com/newPass", {
+fetch("https://jobscrap-api.herokuapp.com/newPass", {
         method: 'PUT',
         body: JSON.stringify( {pass: pass, email: mail, id: id, secret: secret} ),
         headers: {
