@@ -111,7 +111,7 @@ function search(){
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            mode: 'cors'
+            mode: 'no-cors'
         })
         .then(res => res.json())
         .then(data => {
