@@ -16,7 +16,7 @@ function goBack() {
 SENDbtn.addEventListener("click", () => recuperar() )
 
 function recuperar() {
-    fetch("https://glacial-woodland-30782.herokuapp.com/recuperar", {
+    fetch("https://jobscrap-api.herokuapp.com/recuperar", {
         method: 'POST',
         body: JSON.stringify( {email: INPUTmail.value} ),
         headers: {
