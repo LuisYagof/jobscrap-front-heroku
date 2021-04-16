@@ -111,7 +111,7 @@ function search(){
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            mode: 'no-cors'
+            mode: 'cors'
         })
         .then(res => res.json())
         .then(data => {
@@ -133,7 +133,7 @@ function search(){
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            mode: 'no-cors'
+            mode: 'cors'
         })
         .then(res => res.json())
         .then(data => {
