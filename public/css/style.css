@@ -56,8 +56,19 @@ h1{
 ul{
     height: 50px;
     margin: 0px;
-    margin-right: -95px;
+    margin-right: -235px;
 }
+
+ul{
+    height: 50px;
+    margin: 0px;
+    margin-right: -235px;
+}
+
+ul.ulFavs{
+    margin-right: -70px;
+}
+
 ul li{
     display: inline-flex;
     background-color: rgb(71 110 180);
